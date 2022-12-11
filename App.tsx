@@ -8,9 +8,9 @@ import { Home } from './src/view/home/Home';
 export default function App() {
     const AppRoutes = createNativeStackNavigator<AppRoutesType>();
     return (
-        <NavigationContainer theme={{...DefaultTheme, colors: {...DefaultTheme.colors, background: 'white'}}}><AppRoutes.Navigator initialRouteName='Login' >
-            <AppRoutes.Screen name='Login' options={{ headerShown: false }} component={Login} />
-            <AppRoutes.Screen name='Home' options={{ headerShown: false }} component={Home} />
+        <NavigationContainer theme={{...DefaultTheme, colors: {...DefaultTheme.colors, background: 'white'}}}><AppRoutes.Navigator screenOptions={{headerShown: false}} initialRouteName='Login' >
+            <AppRoutes.Screen name='Login' component={Login} />
+            <AppRoutes.Screen name='Home' component={Home} />
         </AppRoutes.Navigator></NavigationContainer>
     );
 }
