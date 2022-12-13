@@ -6,6 +6,7 @@ type LoginScreenRouteProp = NativeStackScreenProps<AppRoutesType, 'Login'>;
 export const Login = ({ route, navigation }: LoginScreenRouteProp) => {
     const navigator = useNavigation()
     return <view>
+        login page
         <Button onPress={e => navigator.navigate('Home', { screen: 'Discover' })} title="GO to HomePage" />
     </view>
 }

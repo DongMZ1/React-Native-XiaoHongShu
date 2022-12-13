@@ -1,5 +1,6 @@
 import { NavigatorScreenParams } from "@react-navigation/native"
-import { HomeRoutesType } from "./homeRoutes"
+import { HomeRoutesType } from "../../view/home/Home"
+
 
 export type AppRoutesType = {
     Home: NavigatorScreenParams<HomeRoutesType>,
