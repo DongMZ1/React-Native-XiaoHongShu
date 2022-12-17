@@ -1,6 +1,6 @@
-import {View} from 'react-native' 
+import {View, Text} from 'react-native' 
 export const Nearby = () => {
-    return <View>
+    return <Text>
         Nearby Page
-    </View>
+    </Text>
 }
