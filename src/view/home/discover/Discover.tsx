@@ -7,7 +7,7 @@ import { HomeRoutesType } from '../Home';
 export const Discover = () => {
     const route = useRoute<RouteProp<HomeRoutesType, 'Discover'>>()
     const navigation = useNavigation()
-    return <View>
-        <Button onPress={() => navigation.navigate('Login')} title='to near by page' />
+    return <View style={{height: '100%', backgroundColor: 'blue', width: '100%'}}>
+        
     </View>
 }
